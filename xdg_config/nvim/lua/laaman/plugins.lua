@@ -3,17 +3,18 @@ return require('packer').startup(function()
     use 'nvim-lualine/lualine.nvim'
     use 'mhinz/vim-startify'
 
-	-- fuzzy finder
+	-- telescope
 	use {
 		'nvim-telescope/telescope.nvim',
 		requires = {{ 'nvim-lua/plenary.nvim' }}
 	}
 
-	-- telescope fzf extension
+	-- telescope extensions
 	use {
 		'nvim-telescope/telescope-fzf-native.nvim',
 		run = 'make'
 	}
+	use 'nvim-telescope/telescope-file-browser.nvim'
 
 	-- LSP and completion
 	use {
