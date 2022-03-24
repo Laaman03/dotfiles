@@ -11,12 +11,12 @@ local function imap(shortcut, command)
 end
 
 -- Normal mode remaps
-nmap('<leader>h', ':set number<cr>')
 nmap('<leader>sv', ':source $MYVIMRC<cr>')
 nmap('<leader>ev', ':e $MYVIMRC<cr>')
 nmap('<leader>ch', ':noh<cr>')
 nmap('<leader>ff', ':Telescope find_files<cr>')
 nmap('<leader>fb', ':Telescope file_browser<cr>')
+nmap('<leader>fg', ':Telescope grep_string<cr>')
 
 -- Insert remaps
 imap('jk', '<esc>')
