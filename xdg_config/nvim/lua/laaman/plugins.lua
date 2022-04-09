@@ -16,13 +16,9 @@ return require('packer').startup(function()
 	}
 	use 'nvim-telescope/telescope-file-browser.nvim'
 
-	-- LSP and completion
+	-- LSP
 	use {
 		'neovim/nvim-lspconfig',
 		'williamboman/nvim-lsp-installer',
-		'hrsh7th/nvim-cmp',
-		'hrsh7th/cmp-nvim-lsp',
-		'saadparwaiz1/cmp_luasnip',
-		'L3MON4D3/LuaSnip'
 	}
 end)
