@@ -16,5 +16,3 @@ require "laaman.telescope"
 -- lsp setup
 require "laaman.lsp"
 
--- completion
-require "laaman.completion"

@@ -1,8 +1,5 @@
 local nvim_lsp = require'nvim-lsp-installer'
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require'cmp_nvim_lsp'.update_capabilities(capabilities)
-
 local on_attach = function(client, bufnr)
 	local opts = { noremap = true, silent = true }
 	local bmap = function(shortcut, command)
