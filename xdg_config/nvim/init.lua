@@ -16,3 +16,5 @@ require "laaman.telescope"
 -- lsp setup
 require "laaman.lsp"
 
+-- treesitter
+require "laaman.treesitter"
