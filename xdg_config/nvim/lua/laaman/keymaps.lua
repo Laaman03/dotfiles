@@ -17,6 +17,7 @@ nmap('<leader>ch', ':noh<cr>')
 nmap('<leader>ff', ':Telescope find_files<cr>')
 nmap('<leader>fb', ':Telescope file_browser<cr>')
 nmap('<leader>fg', ':Telescope grep_string<cr>')
+nmap('<leader>ft', ':Telescope treesitter<cr>')
 nmap('<leader><Left>', '<C-^>')
 
 -- Insert remaps

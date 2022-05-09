@@ -11,7 +11,9 @@ local on_attach = function(client, bufnr)
 		{ 'gD', ':lua vim.lsp.buf.declaration()<cr>' },
 		{ 'gd', ':lua vim.lsp.buf.definition()<cr>' },
 		{ 'K', ':lua vim.lsp.buf.hover()<cr>' },
-		{ '<space>rn', ':lua vim.lsp.buf.rename()<cr>' }
+		{ '<space>rn', ':lua vim.lsp.buf.rename()<cr>' },
+		{ '[d', ':lua vim.diagnostic.goto_prev()<cr>' },
+		{ ']d', ':lua vim.diagnostic.goto_next()<cr>' },
 	}
 
 	for _, v in ipairs(keymaps) do
