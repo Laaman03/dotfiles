@@ -19,6 +19,7 @@ nmap('<leader>fb', ':Telescope file_browser<cr>')
 nmap('<leader>fg', ':Telescope grep_string<cr>')
 nmap('<leader>ft', ':Telescope treesitter<cr>')
 nmap('<leader><Left>', '<C-^>')
+nmap('<leader>l', ':Ex<cr>')
 
 -- Insert remaps
 imap('jk', '<esc>')
