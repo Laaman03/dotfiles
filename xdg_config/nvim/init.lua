@@ -18,3 +18,6 @@ require "laaman.lsp"
 
 -- treesitter
 require "laaman.treesitter"
+
+-- neogit
+require "laaman.neogit"

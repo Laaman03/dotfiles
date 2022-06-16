@@ -27,4 +27,7 @@ return require('packer').startup(function()
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
 	}
+	
+	-- neogit
+	use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 end)
