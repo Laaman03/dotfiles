@@ -53,7 +53,6 @@
   ansible.builtin.copy:
     dest: "{{ ansible_user_dir }}/.config/nvim/init.lua"
     src: "init.lua"
-  notify: update packer
 
 - name: Copy modules
   ansible.builtin.copy:

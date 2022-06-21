@@ -1,0 +1,6 @@
+---
+- name: Copy config
+  ansible.builtin.copy:
+    src: "config"
+    dest: "{{ ansible_user_dir }}/.ssh/config"
+    mode: "0400"

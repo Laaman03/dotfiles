@@ -1,23 +1,23 @@
+-- packer.nvim https://github.com/wbthomason/packer.nvim
+require "laaman.plugins".init()
+
 -- Global settings and options
-require "laaman.global"
+require "laaman.global".init()
 
 -- Key remaps
-require "laaman.keymaps"
-
--- packer.nvim https://github.com/wbthomason/packer.nvim
-require "laaman.plugins"
+require "laaman.keymaps".init()
 
 -- load lualine options
-require "laaman.lualine"
+require "laaman.lualine".init()
 
 -- load telescope fzf extension
-require "laaman.telescope"
+require "laaman.telescope".init()
 
 -- lsp setup
-require "laaman.lsp"
+require "laaman.lsp".init()
 
 -- treesitter
-require "laaman.treesitter"
+require "laaman.treesitter".init()
 
 -- neogit
-require "laaman.neogit"
+require "laaman.neogit".init()

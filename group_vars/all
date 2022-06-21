@@ -4,3 +4,5 @@ default_roles:
   - bash
   - gtk
   - ssh
+  - dotnet
+  - open-vm-tools

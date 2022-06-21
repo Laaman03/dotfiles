@@ -1,4 +1,6 @@
-return require('packer').startup(function()
+local M = {}
+local packer = require 'packer'
+local packer_startup = function()
     use 'wbthomason/packer.nvim'
     use 'nvim-lualine/lualine.nvim'
     use 'mhinz/vim-startify'
@@ -30,4 +32,10 @@ return require('packer').startup(function()
 	
 	-- neogit
 	use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
-end)
+end
+
+M.init = function()
+	packer.startup(packer_startup)
+end
+
+return M

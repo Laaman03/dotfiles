@@ -1,3 +1,5 @@
+local M = {}
+
 local nvim_lsp = require'nvim-lsp-installer'
 
 local on_attach = function(client, bufnr)
@@ -22,9 +24,12 @@ local on_attach = function(client, bufnr)
 
 end
 
-nvim_lsp.on_server_ready(function(server)
-	server:setup({ on_attach = on_attach, capabilities = capabilities })
-end)
+M.init = function()
+	nvim_lsp.on_server_ready(function(server)
+		server:setup({ on_attach = on_attach, capabilities = capabilities })
+	end)
 
-vim.o.completeopt = 'menuone,noselect'
+	vim.o.completeopt = 'menuone,noselect'
+end
 
+return M
