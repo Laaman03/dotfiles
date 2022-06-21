@@ -1,0 +1,2 @@
+- name: reload mkinit
+  command: "mkinitcpio -P"

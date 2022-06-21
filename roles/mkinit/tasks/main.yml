@@ -1,0 +1,7 @@
+---
+- name: Copy mkinit config
+  ansible.builtin.copy:
+    src: "mkinitcpio.conf"
+    dest: "/etc/mkinitcpio.conf"
+  become: true
+  notify: reload mkinit

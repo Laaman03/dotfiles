@@ -4,18 +4,18 @@
     name:
       - open-vm-tools
     state: latest
-  become: yes
+  become: true
 
 - name: Enable vmtoolsd
   ansible.builtin.systemd:
-    enabled: yes
+    enabled: true
     name: vmtoolsd
     state: started
-  become: yes
+  become: true
 
 - name: Enable vmware-vmblock-fuse
   ansible.builtin.systemd:
-    enabled: yes
+    enabled: true
     name: vmware-vmblock-fuse
     state: started
-  become: yes
+  become: true
