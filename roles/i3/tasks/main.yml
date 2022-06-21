@@ -6,7 +6,7 @@
 
 - name: Copy urxvt config
   ansible.builtin.copy:
-    src: ".urxvt"
+    src: ".urxvt/"
     dest: "{{ ansible_user_dir }}/.urxvt"
 
 - name: Copy Xresources
