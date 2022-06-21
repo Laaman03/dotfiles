@@ -1,0 +1,18 @@
+---
+- name: Copy i3 config
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.config"
+    src: "i3"
+
+- name: Copy urxvt config
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir}}/.urxvt"
+    src: ".urxvt"
+
+- name: Copy Xresources
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.XResources"
+    src: ".Xresources"
+  notify: reload xrdb
+
+

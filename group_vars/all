@@ -1,0 +1,6 @@
+default_roles:
+  - neovim
+  - i3
+  - bash
+  - gtk
+  - ssh

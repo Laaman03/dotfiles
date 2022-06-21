@@ -1,0 +1,3 @@
+---
+- name: reload xrdb
+  command: "xrdb {{ ansible_user_dir }}/.Xresources"
