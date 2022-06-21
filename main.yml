@@ -16,5 +16,11 @@
       tags:
         - always
 
+    - name: run extras
+      when: run_extra_roles
+      include_role:
+        name: "{{ item }}"
+      with_items: "{{ extra_roles }}"
+
 
 

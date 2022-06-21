@@ -6,3 +6,8 @@ default_roles:
   - ssh
   - dotnet
   - open-vm-tools
+
+extra_roles:
+  - mkinit
+
+run_extra_roles: false
