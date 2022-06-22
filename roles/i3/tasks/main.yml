@@ -1,4 +1,14 @@
 ---
+- name: Ensure old config location is absent
+  ansible.builtin.file:
+    path: "{{ ansible_user_dir }}/.i3"
+    state: absent
+
+- name: Create new config file
+  ansible.builtin.file:
+    path: "{{ ansible_user_dir }}/.config/i3/config"
+    state: touch
+
 - name: Copy i3 config
   ansible.builtin.copy:
     src: "i3/config"
