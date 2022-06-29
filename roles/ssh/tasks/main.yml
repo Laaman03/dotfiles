@@ -1,12 +1,6 @@
 ---
-- name: Ensure file exists
-  ansible.builtin.file:
-    path: "{{ ansible_user_dir }}/.ssh/config"
-    state: touch
-    mode: "0400"
-
 - name: Copy config
   ansible.builtin.copy:
     src: "config"
-    dest: "{{ ansible_user_dir }}/.ssh/config"
+    dest: "{{ ansible_user_dir }}/.ssh/"
     mode: "0400"

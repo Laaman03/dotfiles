@@ -1,5 +1,5 @@
 ---
 - name: Copy backgrounds to ~/Pictures/Backgrounds
-  ansible.builtins.copy:
+  ansible.builtin.copy:
     src: backgrounds/
     dest: "{{ ansible_user_dir }}/Pictures/Backgrounds"
